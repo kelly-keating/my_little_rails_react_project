@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/index'
   get 'hello_world', to: 'hello_world#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -7,5 +8,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "pages#index"
 end
